@@ -1,0 +1,241 @@
+.judge-details {
+  margin: 5% auto;
+  max-width: 1100px;
+}
+
+.search {
+  margin-top: 1rem;
+}
+.judge-list {
+  display: flex;
+  margin-top: 2rem;
+  text-align: center;
+  column-gap: 2%;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+
+.judge-card {
+  font-family: "Poppins";
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+  justify-content: space-between;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border-radius: 10px;
+}
+.judge-card > a {
+  text-decoration: none;
+  color: #1976d2;
+}
+
+.judge-image {
+  width: 200px;
+  height: 200px;
+}
+.judge-image > img {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border: 8px solid white;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.heading {
+  text-align: center;
+  margin: 3% 0% 5% 0%;
+}
+
+.mainBody{
+  margin-top: 30px;
+}
+.round {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  float: left;
+  font-weight: bold;
+  shape-outside: circle();
+  margin-right: 2rem;
+}
+.css-gepadz-MuiTypography-root {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 30px !important;
+  font-weight: bold !important;
+}
+.round img {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border: 8px solid white;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.heading_icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.judgeName{
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  margin-left: -17%;
+}
+.judgePosition{
+  color: #1976D2;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: -12%;
+}
+.judge-details p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.contact {
+  /* margin: 2rem 0; */
+  flex-wrap: wrap;
+  display: flex;
+  column-gap: 0.8rem;
+}
+
+.contact > a {
+  font-size: 45px;
+  color: #1976d2;
+}
+
+.contact svg {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+
+.contact-form {
+  position: relative;
+  border: 1.17062px solid #1976d2;
+  border-radius: 9.36497px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: auto auto;
+  max-width: 80%;
+  /* min-width: 80%; */
+  margin-bottom: 5rem;
+  border-radius: 5px;
+}
+.contact-inputs {
+  padding: 2rem;
+  width: 100%;
+}
+.contact-inputs h1 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+.contact-inputs p {
+  color: #7d7d7d;
+  font-size: 20px;
+  margin-top: 0.5rem;
+}
+.contact-inputs form {
+  margin-top: 5%;
+}
+.contact-inputs form > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.contact-inputs form > div > label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+.contact-inputs form > div > input {
+  padding: 0.8rem 1rem;
+}
+.contact-inputs form > div > textarea {
+  padding: 0.8rem 1rem;
+}
+.contact-inputs form > Button {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .judge-details {
+    margin: 5% 2rem;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .judge-card {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .heading_icons {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .round {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .judge-card {
+    width: 48%;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  .judge-card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .judge-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    text-align: center;
+  }
+  .mainBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    text-align: center;
+  }
+  .heading_icons{
+    align-items: center;
+  }
+  .judgeName, .judgePosition{
+    margin-left: 0;
+  }
+  .contact > a {
+    font-size: 40px;
+  }
+  .judge-details h1 {
+    font-size: xx-large;
+  }
+
+  .judge-details h2 {
+    font-size: x-large;
+  }
+
+  .judge-details p {
+    font-size: medium;
+  }
+}

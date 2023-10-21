@@ -1,0 +1,50 @@
+.breed-list {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+
+.breed-card {
+  width: 250px;
+  border-top: 1px solid #dedede;
+  border-bottom: 5px solid #003594;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;
+  /* width: 350px; */
+}
+
+.breed-card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* border-radius: 10px; */
+  height: 180px;
+  /* height: 200px; */
+}
+
+.breed-card a {
+  text-decoration: none;
+}
+
+.breed-card span p {
+  text-align: center;
+  color: #007acc;
+  margin: 0.5rem 0;
+}
+
+.breed-card:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .breed-list {
+    justify-content: center;
+    row-gap: 1rem;
+  }
+}

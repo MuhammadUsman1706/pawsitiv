@@ -1,0 +1,73 @@
+.sibling-cards {
+  margin: 20px 20px 10px;
+  max-width: 100%;
+}
+.sibling-card {
+  display: flex;
+  background-image: url("../../../../../public/images/sibling_bgImg.svg");
+  /* background-image: url("../../../../../public/images/sibling_bgImg1.svg"); */
+  background-size: 100% 100%;
+  column-gap: 2rem;
+  padding: 1rem 1rem;
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.sibling-cards .sliblingImg {
+  /* border: 2px solid silver ; */
+  border: 2px solid white;
+  padding: 1px;
+  max-width: 100px;
+  max-height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.sliblingImg {
+  display: block;
+  width: 100px;
+  height: 80px;
+  border-radius: 10px;
+}
+.siblingInfo > span:nth-child(1),
+.siblingInfo > a:nth-child(1) {
+  color: #1976d2;
+  font-size: 1.4em;
+  font-weight: 600;
+  text-decoration: none;
+}
+.siblingInfo > div > span {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+  .sibling-card {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sibling-card {
+    width: 98%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .sibling-card {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .siblingInfo {
+    padding-top: 10px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .sibling-cards {
+    margin: 20px 0px 10px;
+  }
+  .sliblingImg {
+    width: 80px;
+    height: 70px;
+  }
+}

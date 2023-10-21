@@ -1,0 +1,204 @@
+.breed-detail {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.header {
+  /* background-image: linear-gradient(180deg, #0065c6, #003594); */
+  background-color: #1976d2;
+  display: flex;
+  column-gap: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.filter{
+  padding-bottom: 2%;
+}
+.search {
+  margin-top: 1rem;
+}
+
+.breed-list {
+  /* margin-top: 3rem; */
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+.breed-card {
+  width: 250px;
+  /* width: 350px; */
+  border-top: 1px solid #dedede;
+  border-bottom: 5px solid #003594;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.breed-card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* border-radius: 10px; */
+  height: 180px;
+  /* height: 200px; */
+}
+.breed-card span p {
+  text-align: center;
+  color: #007acc;
+  margin: 0.5rem 0;
+}
+
+.breed-card:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.about {
+  width: 30%;
+  color: white;
+}
+
+.carousel {
+  width: 70%;
+  height: 430px;
+}
+
+.image {
+  height: 400px;
+  /* width: 400px; */
+  /* margin: auto; */
+}
+
+.image img {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.basic-char {
+  display: flex;
+  padding: 2rem;
+  margin: 2rem 0;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+
+.basic-char > div {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.basic-char h2 {
+  width: 20%;
+  text-align: center;
+}
+
+.attribute {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+}
+
+.attribute > svg {
+  width: 70px;
+}
+
+.attribute p {
+  color: #1976d2;
+}
+
+.adv-char h1 {
+  margin: 3rem 0 2rem 0;
+}
+
+.care {
+  padding: 5% 5%;
+  margin: 2rem 0;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+
+.accordion {
+  margin-top: 3rem;
+  padding: 0% 3%;
+}
+
+.accordion > div {
+  box-shadow: none;
+  background-color: #f8f8f8;
+}
+
+.accordion > div > div {
+  padding: 0 !important;
+}
+
+.accordion .typography {
+  display: flex;
+  column-gap: 0.7rem;
+  align-items: center;
+  font-size: large;
+  color: #1976d2;
+  margin: 0.2rem 0;
+}
+
+.accordion .typography span {
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .breed-detail {
+    margin: 2rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .header {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .about {
+    width: 100%;
+    text-align: center;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .basic-char {
+    flex-direction: column;
+  }
+
+  .basic-char > div {
+    width: 100%;
+  }
+
+  .basic-char h2 {
+    width: 100%;
+  }
+
+  .attribute {
+    justify-content: center;
+    margin: 1rem auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .basic-char > div {
+    flex-direction: column;
+  }
+  .breed-list {
+    justify-content: center;
+    row-gap: 1rem;
+  }
+}

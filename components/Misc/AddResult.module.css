@@ -1,0 +1,63 @@
+.main-section {
+  margin: 2rem auto;
+  max-width: 1100px;
+}
+.AddResult-main-info {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background: #eff1f3;
+  margin-top: 15px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.AddResult-info-Div{
+    /* min-width: 100%; */
+}
+.AddResult-input-Div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.AddResult-input-Div > label {
+  font-weight: 700;
+}
+.AddResult-input-Div > input {
+  padding: 0.6rem 0.9rem;
+  width: 40rem;
+  margin-bottom: 20px;
+}
+.AddResult-input-Div > input::-webkit-outer-spin-button,
+.AddResult-input-Div > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.uploadBtn{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding:5px 30px ;
+    width: 230px;
+    border-radius: 5px;
+}
+.downloadBtn{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding:5px 30px ;
+    width: 230px;
+    border-radius: 5px;
+}
+.SubmitBtn{
+    padding: 8px 50px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media screen and (max-width: 1200px) {
+    .main-section {
+      margin: 2rem;
+    }
+  }
+@media screen and (max-width:767px) {
+    .AddResult-input-Div > input {
+        width: 100%;
+    }
+}

@@ -1,0 +1,69 @@
+.rating-list {
+  overflow-x: auto;
+}
+
+.rating-list > div > p {
+  display: table;
+  white-space: nowrap;
+}
+
+.rating-list hr {
+  margin: 1rem 0;
+  width: 100%;
+  display: table-row;
+  height: 10px;
+}
+
+.rating {
+  column-gap: 2rem;
+  align-items: center;
+  display: table-row;
+}
+
+.att-name {
+  text-transform: uppercase;
+  color: #003594;
+  margin: 0.5rem 0;
+  font-size: large;
+  display: table-cell;
+}
+
+.att-name::before {
+  content: " > ";
+}
+
+.att-name::after {
+  content: ":";
+}
+
+.stars {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+  .rating-list > div {
+    width: 100%;
+  }
+
+  .rating-list > div > p {
+    display: table;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .rating {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .att-name::before {
+    content: "";
+  }
+
+  .att-name::after {
+    content: "";
+  }
+}

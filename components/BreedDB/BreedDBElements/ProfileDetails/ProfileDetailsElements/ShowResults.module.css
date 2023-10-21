@@ -1,0 +1,52 @@
+.show-results {
+  margin-top: -30px;
+}
+
+.best-in-show,
+.best-in-group,
+.breed-section {
+  margin: 2rem 0;
+}
+
+.best-in-show h2,
+.best-in-group h2,
+.breed-section h2 {
+  text-align: center;
+  margin: 1rem auto;
+  /* font-weight: normal; */
+  /* font-size: x-large; */
+}
+
+.table-parent {
+  overflow-x: auto;
+}
+
+.table {
+  box-sizing: border-box;
+  border-collapse: collapse;
+  margin: 10px;
+  width: calc(100% - 20px);
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.table a {
+  text-decoration: none;
+}
+
+.table thead th {
+  /* border: 1px solid black; */
+  background-color: #1976d2;
+  color: white;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+}
+
+.table tr:nth-child(even) {
+  background-color: #e9ecef;
+}

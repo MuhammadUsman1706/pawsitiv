@@ -1,0 +1,204 @@
+.progeny-main {
+  margin: 20px 20px 10px;
+  max-width: 100%;
+}
+.progeny-Main-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 1.5rem;
+  width: 100%;
+  border-radius: 10px;
+  margin: 1rem 0rem;
+  padding: 2rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  /* background-image: url("../../../../../public/images/sibling_bgImg.svg"); */
+  /* background-image: url("../../../../../public/images/card-bg-img1.svg"); */
+  background: linear-gradient(
+    180deg,
+    rgba(181, 190, 199, 1) 20%,
+    rgba(239, 242, 243, 1) 75%
+  );
+  /* background-image: url("../../../../../public/images/bgDog2.jpg"); */
+  background-size: 100% 100%;
+  position: relative;
+}
+.bgImg {
+  background-size: 100% 100%;
+  /* background-image: url("../../../../../public/images/bgDog-img.png"); */
+  background-image: url("../../../../../public/images/bgDog3.png");
+  background-size: 100% 100%;
+  position: absolute;
+  z-index: 1;
+  width: 800px;
+  height: 500px;
+  right: 0;
+  bottom: 0;
+}
+.progeny-parent-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  /* background-image: url("../../../../../public/images/sibling_bgImg.svg"); */
+  /* background-image: url("../../../../../public/images/sibling_bgImg1.svg"); */
+  background-size: 100% 100%;
+  column-gap: 0.7rem;
+  padding: 1rem 1rem;
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    z-index: 50;
+  }
+.parentInfo {
+  width: 100%;
+}
+.parentHeading {
+  display: flex;
+  align-items: center;
+}
+.childHeading {
+  display: flex;
+  align-items: center;
+}
+.parentInfo > div:nth-child(1) > a {
+  color: #1976d2;
+  font-size: 1.4em;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.parentInfo > div > span {
+  font-weight: 400;
+}
+.breedDiv > span {
+  font-weight: 600;
+  display: flex;
+  justify-content: end;
+}
+.child-main-card {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  gap: 25px;
+  padding: 0rem 2rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 50;
+}
+.progeny-child-card {
+  /* background-image: url("../../../../../public/images/sibling_bgImg.svg"); */
+  /* background-image: url("../../../../../public/images/sibling_bgImg1.svg"); */
+  background: white;
+  background-size: 100% 100%;
+  column-gap: 2rem;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  width: 48%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.childInfo > div:nth-child(1) > a {
+  color: #1976d2;
+  font-size: 1.15em;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.sireDamDiv {
+  display: flex;
+  column-gap: 1rem;
+}
+.sireDamDiv > div:nth-of-type(1) > span:nth-child(1) {
+  font-weight: 600;
+}
+.sireDamDiv > div:nth-of-type(2) > span:nth-child(1) {
+  font-weight: 600;
+}
+.child-details {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .progeny-parent-card {
+    width: 60%;
+  }
+  .progeny-child-card {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .progeny-parent-card {
+    width: 80%;
+  }
+  .progeny-child-card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .child-main-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .progeny-child-card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .progeny-parent-card {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .parentHeading {
+    justify-content: center;
+  }
+  .child-main-card {
+    padding: 0rem 1rem;
+  }
+  .childHeading {
+    justify-content: center;
+  }
+  .child-details {
+    flex-direction: column;
+  }
+  .child-details img {
+    width: 85px;
+    height: 85px;
+    margin-right: 0px !important;
+    margin-bottom: 10px;
+  }
+  .progeny-parent-card img {
+    width: 115px !important;
+    margin-bottom: 10px;
+  }
+  .progeny-child-card {
+    width: 100%;
+    text-align: center;
+  }
+  .childContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  .parentInfo > div:nth-child(1) > span {
+    font-size: 1.2em;
+  }
+  .child-main-card {
+    padding: 0px 5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .progeny-Main-card {
+    padding: 2rem 10px;
+  }
+  .progeny-main {
+    margin: 20px 0px 10px;
+  }
+}

@@ -1,0 +1,90 @@
+.judge-list-main {
+  margin: 2rem auto;
+  max-width: 1100px;
+}
+
+.header {
+  text-align: center;
+  margin: 2rem;
+}
+
+.header h1 {
+  margin-bottom: 1rem;
+}
+
+.search {
+  margin-top: 1rem;
+}
+
+/* Paginated */
+
+.judge-list {
+  display: flex;
+  margin-top: 2rem;
+  text-align: center;
+  column-gap: 2%;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+
+.judge-card {
+  font-family: "Poppins";
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+  justify-content: space-between;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border-radius: 10px;
+}
+
+.judge-card > a {
+  text-decoration: none;
+  color: #1976d2;
+}
+
+.judge-image {
+  width: 200px;
+  height: 200px;
+}
+
+.judge-image > img {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border: 8px solid white;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+  /* .judge-list {
+    column-gap: 2%;
+  } */
+
+  .judge-card {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .judge-card {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .judge-card {
+    width: 100%;
+  }
+}
+
+/* Paginated */
+
+@media screen and (max-width: 1200px) {
+  .judge-list-main {
+    margin: 2rem;
+  }
+}

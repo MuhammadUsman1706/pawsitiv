@@ -1,0 +1,32 @@
+.table-parent {
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.table a {
+  text-decoration: none;
+}
+
+.table thead th {
+  /* border: 1px solid black; */
+  background-color: #1976d2;
+  color: white;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+}
+
+#country > img {
+  width: 20px !important;
+  height: 20px !important;
+}

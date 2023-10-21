@@ -1,0 +1,36 @@
+{
+  "name": "pawsitiv-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://pawsitiv.dog",
+  "scripts": {
+    "dev": "next dev",
+    "start": "next start",
+    "build": "next build",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.12",
+    "@mui/x-date-pickers": "^6.0.2",
+    "dayjs": "^1.11.7",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "moment-timezone": "^0.5.43",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-cookie-banner": "^4.1.0",
+    "react-country-flag": "^3.0.2",
+    "react-dom": "18.2.0",
+    "react-google-recaptcha-v3": "^1.10.1",
+    "react-html-parser": "^2.0.2",
+    "react-material-ui-carousel": "^3.4.2",
+    "react-organizational-chart": "^2.2.0",
+    "react-paginate": "^8.1.4",
+    "react-swipeable-views": "^0.14.0",
+    "react-toastify": "^9.1.2",
+    "swr": "^2.1.3"
+  }
+}

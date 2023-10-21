@@ -1,0 +1,14 @@
+.navbar a {
+  text-decoration: none;
+}
+
+.box a {
+  text-decoration: none;
+}
+.active {
+  font-weight: bold;
+  border-bottom: 2px solid  white; 
+}
+.AddBtn{
+  color: white ;
+}

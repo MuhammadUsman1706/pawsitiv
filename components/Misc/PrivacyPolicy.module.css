@@ -1,0 +1,55 @@
+.privacy-policy li,
+.privacy-policy p {
+  font-family: "Source Sans Pro";
+}
+
+.privacy-policy h1,
+.privacy-policy h2,
+.privacy-policy p,
+.privacy-policy ul,
+.privacy-policy li {
+  margin: revert !important;
+  padding: revert !important;
+}
+
+.hero-section {
+  background-image: url("../../public/images/wave.png");
+  padding-top: 3rem;
+  padding-bottom: 9rem;
+  background-size: 100% 100%;
+}
+
+.header {
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  font-size: xx-large;
+  position: relative;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h1 {
+  font-weight: 600;
+}
+
+.header p {
+  font-size: 1.1rem;
+  margin-top: 40px;
+  width: 65%;
+}
+
+.text {
+  max-width: 1300px;
+  margin: auto;
+  margin-top: -3rem;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .text {
+    margin: 0 2rem;
+  }
+}
